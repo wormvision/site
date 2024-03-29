@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Primary: #fff;
+    --Secondary: #222;
+    --Tertiary: #F0F0F0;
+    --Highlight: #1EAEFF;
+    --Highlight-Hover: #52c0ff;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    margin:0;
+}
+
+.contact {
+    display: flex;
+}
+
+input[type=email]  {
+    font-size: 1rem;
+    font-family: "Public Sans", sans-serif;
+    display: flex;
+    padding: 0.8rem;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+    background: #FFF;
+    background: color(display-p3 1 1 1);
+    border: none;
+    width: 100%;
+    max-width: 12rem;
+}
+
+.submit {
+    font-size: 1rem;
+    font-family: "Public Sans", sans-serif;
+    border: none;
+    display: flex;
+    padding: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 0rem 0.8rem 0.8rem 0rem;
+    color: var(--Primary);
+    background: var(--Highlight);
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.submit:hover {
+    background: var(--Highlight-Hover);
+    transition-duration: 500ms;
+}
+
+h1, h2, h3,h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    line-height: 120%; 
+    margin: 0;
+    color: var(--Secondary);
+}
+
+p a, a {
+    color: var(--Highlight);
+    text-decoration: none;
+}
+
+p a:hover, a {
+    color: var(--Highlight-Hover);
+}
+
+h1,h2,h3 {
+    font-weight: 500;
+}
+
+h4,h5,h6 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+small {
+    font-size: 0.8rem;
+}
+
+p, a, small {
+    font-family: "Public Sans", sans-serif;
+    line-height: 150%;
+    font-weight: 400;
+    margin: 0;
+    color: var(--Secondary);
+}
+
+header {
+    display: flex;
+
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background: var(--Secondary);
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    max-width: 62rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+nav ul li {
+    border:solid;
+    border-color: var(--Primary);
+    border-width: 1px;
+    padding: 1rem;
+}
+
+nav ul p {
+    color: var(--Primary);
+    text-decoration: none;
+}
+
+
+nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.image {
+    height: 23.6rem;
+    border-radius: 0.8rem;
+    width: 100%;
+}
+
+.about .image {
+    background: url(images/avatar.png) lightgray 50% / cover no-repeat;
+}
+
+.business .image {
+    background: url(images/merch.png) lightgray 50% / cover no-repeat;
+}
+
+.goatdraw .image {
+    background: url(images/deskmat.png) lightgray 50% / cover no-repeat;
+}
+
+.dfloe .image {
+    background: url(images/merch2.png) lightgray 50% / cover no-repeat;
+}
+
+.navbar .image, footer .image{
+    width: 3.15rem;
+    height: 3.15rem;
+    border-radius: 3.15rem;
+    background: url(images/avatar.png) lightgray 50% / cover no-repeat;
+    flex: none;
+}
+
+.hero {
+    display: flex;
+    min-height: 25.15rem;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.47) 0%, rgba(0, 0, 0, 0.47) 100%), url(images/hero.png) lightgray 50% / cover no-repeat;
+    background: linear-gradient(180deg, color(display-p3 0 0 0 / 0.47) 0%, color(display-p3 0 0 0 / 0.00) 100%), url(images/hero.png) lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px color(display-p3 0 0 0 / 0.25);
+    background-attachment: fixed;
+}
+
+.accent {
+    color: var(--Highlight);
+}
+
+.left, .right{
+    max-width: 30.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+    flex: 1 0 0;
+}
+
+.hero h1,.hero  h6,.hero  p {
+    color: var(--Primary);
+    max-width: 30.25rem;
+}
+
+.herotext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    max-width: 62rem;
+}
+
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+
+.about, .business, .goatdraw, .dfloe {
+    display: flex;
+    margin: 0 auto;
+    padding: 2.2rem 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.6rem;
+    animation: 1s fadeInUp;
+    
+}
+
+.business {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 69%), #444;
+    background: linear-gradient(180deg, color(display-p3 0 0 0 / 0.00) 0%, color(display-p3 0 0 0 / 0.20) 69%), color(display-p3 0.2667 0.2667 0.2667);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px color(display-p3 0 0 0 / 0.25);
+}
+
+.business h2, .business p {
+    color: var(--Primary)
+}
+
+.goatdraw {
+    background: var(--Tertiary);
+    background: color(display-p3 0.9188 0.9188 0.9188);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px color(display-p3 0 0 0 / 0.25);
+}
+
+.whatido {
+    display: flex;
+    margin:0 auto;
+    max-width: 72rem;
+    padding: 2.2rem 5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.whatido p{
+    max-width: 30.45rem;
+    text-align: center;
+}
+
+.cards {
+    margin: 0 auto;
+    display: grid;
+    max-width: 62rem;
+    padding-bottom: 2.2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.7rem;
+}
+
+.cards .left:hover, .cards .right:hover {
+    -webkit-transform:translateY(-1rem);
+    transition-duration: 300ms;
+}
+
+.cards .left, .cards .right {
+    display: flex;
+    padding: 1.8rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.65rem;
+    flex: 1 0 0;
+    background: var(--Tertiary);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px color(display-p3 0 0 0 / 0.25);
+    transition-duration: 300ms;
+}
+
+footer {
+    display: flex;
+    padding: 3rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #444;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.6rem;
+
+}
+
+.footer-content h2, .footer-content h4, .footer-content h6,.footer-content p{
+    color: var(--Primary);
+}
+
+footer small {
+    color: rgba(255, 255, 255, 0.414);
+}
+
+hr {
+    width: 100%;
+    max-width: 62rem;
+}
+
+small {
+    text-align: center;
+    display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .about, .business, .goatdraw, .dfloe, .cards  {
+        flex-direction: column-reverse;
+    }
+
+    .cards {
+        display:flex;
+    }
+
+    .cards .left {
+        width: auto;
+    }
+
+    .cards .right {
+        width: auto;
+    }
+
+    .left {
+        width: 100%;
+        max-width: none;
+        height:auto;
+    }
+    .right {
+        width: 100%;
+        max-width: none;
+        height:auto;
+    }
+    .image {
+        width: 100%;
+    }
+}
