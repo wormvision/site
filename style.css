@@ -169,7 +169,7 @@ nav ul li:hover {
 }
 
 .about .image {
-    background: url(images/avatar.png) lightgray 50% / cover no-repeat;
+    background: url(images/portraitv.png) lightgray 50% / cover no-repeat;
 }
 
 .business .image {
@@ -246,7 +246,7 @@ nav ul li:hover {
   }
   
 
-.about, .business, .goatdraw, .dfloe {
+.about, .business, .goatdraw, .dfloe, .cards .left, .cards .right, .whatido, footer {
     display: flex;
     margin: 0 auto;
     padding: 2.2rem 1rem;
